@@ -1,7 +1,7 @@
 export const notes=[
     {
     id: 1,
-    title: "Meeting Notes",
+    // title: "Meeting Notes",
    content: "Discussed project roadmap and milestones."
   },
   {
@@ -12,7 +12,7 @@ export const notes=[
   {
     id: 3,
     title: "Daily Journal",
-    content: "Felt productive today, finished coding tasks."
+    // content: "Felt productive today, finished coding tasks."
   },
   {
     id: 4,
