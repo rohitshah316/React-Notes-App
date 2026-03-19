@@ -10,7 +10,7 @@ const NotePage = () => {
 
 
   useEffect(()=>{
-    const savedNotes=JSON.parse(localStorage.getItem("notes") || []);
+    const savedNotes=JSON.parse(localStorage.getItem("notes") || "[]");
     const existingNote=savedNotes.find(n=>n.id===id);
 
     if(existingNote) setNote(existingNote);
@@ -19,7 +19,7 @@ const NotePage = () => {
   },[id,navigate]);
 
   const handleSave=()=>{
-    const savedNotes=JSON.parse(localStorage.getItem("notes") || []);
+    const savedNotes=JSON.parse(localStorage.getItem("notes") || "[]");
     const updatedNotes=savedNotes.map(n=>n.id===id?note:n);
     localStorage.setItem("notes",JSON.stringify(updatedNotes));
     navigate("/");

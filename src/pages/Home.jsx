@@ -9,7 +9,7 @@ const Home = () => {
     const {notes,setNotes}=useContext(NotesContext)
 
     useEffect(()=>{
-      const savedNotes=JSON.parse(localStorage.getItem("notes") || "[");
+      const savedNotes=JSON.parse(localStorage.getItem("notes") || "[]");
       setNotes(savedNotes);
     },[setNotes])
 
