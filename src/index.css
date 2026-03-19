@@ -7,3 +7,10 @@
 body{
     background-color: rgb(3, 21, 40);
 }
+
+
+a.active{
+  color:rgb(37, 1, 58);
+  font-weight: 500;
+  border-bottom: 2px solid rgb(37, 1, 58);
+}
